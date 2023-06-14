@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TERCER ENTREGA TP CODER JS</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <header> 
+    <div class ="imagenprincipal">
+      <img src="../tercerentrega/images/Equipos-de-Aire-Acondicionado-para-Comprar-e1636479234921.jpg" alt="Imagen principal">
+    </div>
+  </header>
+  
+  
+  <div class ="titulo">
+    INVENTARIO PARA CONTROL 
+  </div>
+
+  <div class="formulario">
+    <h2>Agregar aire acondicionado</h2>
+
+    <label for="capacidad">Capacidad en frigorías</label>
+    <input type="number" id="capacidad">
+
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio">
+
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad">
+    
+
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca">
+    
+
+    <button id="add-button">Agregar al inventario</button>
+  </div>
+
+  <div class="filtrocapacidad">
+    <div>Filtrar por capacidad</div>
+    <input type="number" id="filtrocapacidad" placeholder="Filtrar por capacidad">
+  </div>  
+
+
+  <div class="filtromarca">
+    <div>Filtrar por marca</div>
+    <input type="text" id="filtromarca" placeholder="Filtrar por marca">
+  </div>
+  
+  
+  <div class="muestrainventario">
+    <table id="tablainventario">
+      <thead>
+        <tr>
+          <th>Capacidad (frigorias)  </th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Marca</th>
+        </tr>
+      </thead>
+      <tbody id="itemsinventario"></tbody>
+    </table>
+  </div>
+
+
+  <div class="borrar">
+    <button id="clear-storage-button">BORRAR INVENTARIO</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+    
